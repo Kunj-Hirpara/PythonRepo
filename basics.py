@@ -5,10 +5,20 @@ import random
 x = (random.randrange(1,50))
 y = (random.randrange(1,50))
 
+print("PI: ", math.pi)
 print("Square Root of number ", x, ":", math.sqrt(x))
-print("Cosine of number ", x, ":", math.cos(x))
+print("sin of number ", x, ":", math.sin(x))
+print("cos of number ", x, ":", math.cos(x))
+print("tan of number ", x, ":", math.tan(x))
 print("number pow ", x,"and",y, ":", math.pow(x,y))
 print("Factorial of number ", x, ":", math.factorial(x))
+print("ceil value of x: ", math.ceil(x))
+print("floor value of x: ", math.floor(x))
+print("Modulo (x % y): ", {math.modf(x,y)})
+print("Exponent (e^x): ", math.exp(x))
+print("Log base 2 of x:", math.log2(x))
+print("Log base 10 of x:", math.log10(x))
+print("Euler's number e:", math.e)
 print("------------------------------")
 
 # 2
