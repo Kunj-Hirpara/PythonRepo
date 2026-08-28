@@ -31,6 +31,10 @@ print(s1)
 del s1["rno"]
 print(s1)
 
+# empty the dictionary
+s1.clear()
+print(s1)
+
 # Copy()
 s2 = s1.copy()
 print(s2)
