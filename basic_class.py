@@ -16,16 +16,24 @@
 # stu.put("abc")
 # stu.put1()
 
+# class student:
+#     def __init__(self,name,marks):
+#         self.name = name
+#         self.marks = marks
+
+#     def put(self):
+#         print("Name: ", self.name)
+#         print("Marks: ", self.marks)
+
+# a = input("Enter Name: ")
+# b = int(input("Enter Marks: "))
+# stu = student(a,b)
+# stu.put()
+
 class student:
-    def __init__(self,name,marks):
-        self.name = name
-        self.marks = marks
-
-    def put(self):
-        print("Name: ", self.name)
-        print("Marks: ", self.marks)
-
-a = input("Enter Name: ")
-b = int(input("Enter Marks: "))
-stu = student(a,b)
-stu.put()
+    def __init__(self):
+        print("Constructor.")
+    def __del__(self):
+        print("Destructor.")
+stu = student()
+del student
