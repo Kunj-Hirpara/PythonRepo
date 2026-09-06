@@ -1,4 +1,4 @@
 def div(a,b):
     if b == 0:
-        raise ValueError("Cannot divide by zero")
+        raise ValueError
     return a / b
