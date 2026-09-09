@@ -40,3 +40,32 @@ def add(a, b):
 answer = add(10, 20)
 print("Result:", answer)
 
+# Logging decorator
+def log_function(function):
+    def wrapper(*args, **kwargs):
+        print("Calling:", function.__name__)
+        result = function(*args, **kwargs)
+        print("Finished:", function.__name__)
+        return result
+    return wrapper
+
+@log_function
+def add(a, b):
+    return a + b
+
+print(add(10, 20))
+
+# Authentication decorator
+def login_required(function):
+    def wrapper(user):
+        if user == "Kunj":
+            return function(user)
+        print("Access denied")
+    return wrapper
+
+@login_required
+def dashboard(user):
+    print("Welcome to dashboard", user)
+
+dashboard("Kunj")
+dashboard("Rahul")
