@@ -8,8 +8,13 @@ def decorator(func):
 @decorator
 def hello():
     print("Hello world!")
-
 hello()
+# Second way to call the decorator function
+# decorator(hello)()
+
+# Third way to call the decorator function
+# hello = decorator(hello)
+# hello()
 
 # Decorator with arguments
 def decorator(func):
