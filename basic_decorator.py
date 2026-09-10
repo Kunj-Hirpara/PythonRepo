@@ -40,10 +40,14 @@ def decorator(func):
 
 @decorator
 def add(a, b):
-    return a + b
+    print("Result:", a+b)
+add(10, 20)
 
-answer = add(10, 20)
-print("Result:", answer)
+@decorator
+def info(name, age):
+    print("Name: ", name)
+    print("Age: ", age)
+info(name="ABC", age=25)
 
 # Logging decorator
 def log_function(function):
@@ -56,9 +60,14 @@ def log_function(function):
 
 @log_function
 def add(a, b):
-    return a + b
+    print("Result:", a+b)
+add(10, 20)
 
-print(add(10, 20))
+@log_function
+def info(name, age):
+    print("Name: ", name)
+    print("Age: ", age)
+info(name="ABC", age=25)
 
 # Authentication decorator
 def login_required(function):
